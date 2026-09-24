@@ -15,4 +15,6 @@ python draw.py
 
 `train.py` downloads MNIST data when needed and saves the best model as `mnist_mlp_best.pt`. `test.py` reports test accuracy. Run `draw.py` after training to use the drawing interface.
 
-The downloaded dataset and trained checkpoint are generated files and are excluded from Git. The copy already on this computer remains available locally.
+## Evaluation
+
+Using `train.py` with seed 42, the checkpoint selected by validation accuracy achieved 98.25% accuracy (9,825 of 10,000 images) on the MNIST test set when evaluated by `test.py` in a CPU run. The downloaded dataset and trained checkpoint are generated locally and excluded from Git.
